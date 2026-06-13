@@ -15,6 +15,6 @@
     <description>Business Service Modules</description>
 
     <modules>
-        <module>user-service</module>
+        <module>location-service</module>
     </modules>
 </project>
