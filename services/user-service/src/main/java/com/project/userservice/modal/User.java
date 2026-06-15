@@ -1,5 +1,6 @@
 package com.project.userservice.modal;
 
+import com.project.commonlib.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -38,7 +39,7 @@ public class User {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 30)
-    private Role role;
+    private UserRole role;
 
     @Column(nullable = false)
     @Builder.Default
