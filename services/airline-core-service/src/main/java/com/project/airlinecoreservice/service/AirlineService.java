@@ -1,6 +1,7 @@
 package com.project.airlinecoreservice.service;
 
 import com.project.commonlib.payload.request.AirlineRequest;
+import com.project.commonlib.payload.response.AirlineDropdownItem;
 import com.project.commonlib.payload.response.AirlineResponse;
 import com.project.commonlib.enums.AirlineStatus;
 
@@ -15,6 +16,7 @@ public interface AirlineService {
     List<AirlineResponse> getAllAirlines();
     List<AirlineResponse> getAirlinesByStatus(AirlineStatus status);
     AirlineResponse updateAirline(Long id, AirlineRequest request, Long userId);
+    List<AirlineDropdownItem> getAirlinesDropdown();
     void updateAirlineStatus(Long id, AirlineStatus status, Long userId);
     void deleteAirline(Long id);
 }
