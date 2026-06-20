@@ -1,7 +1,7 @@
 package com.project.airlinecoreservice.modal;
 
+import com.project.commonlib.embeddable.Support;
 import com.project.commonlib.enums.AirlineStatus;
-import com.project.commonlib.payload.response.UserResponse;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
@@ -34,6 +34,12 @@ public class Airline {
 
     @Column(nullable = false, length = 100)
     private String name;
+
+    @Column(nullable = false)
+    private Long ownerId;
+
+    @Embedded
+    private Support support;
 
     @Column(length = 50)
     private String alias;
