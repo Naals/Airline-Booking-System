@@ -1,3 +1,13 @@
 spring:
   application:
     name: airline-core-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/abs_airline_core_service_db
+    username: root
+    password: mysql
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 5005
