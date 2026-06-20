@@ -28,9 +28,8 @@ public class AirlineResponse {
     private Instant updatedAt;
 
     private Long ownerId;
-    private UserResponse owner;
     private Long updatedById;
 
-    private CityResponse headquartersCity;
+    private Long headquartersCityId;
     private Support support;
 }
